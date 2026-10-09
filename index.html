@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike. Just Do It</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="images/Nike Logo - Light - 2048x2048 - zonalogo.com.png">
+</head>
+<body>
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
+        <!-- Brand / Logo Gambar -->
+        <a href="#" class="navbar-brand d-flex align-items-center">
+            <img src="images/Nike Logo - Colored - 6144x2048 - zonalogo.com.png" alt="Logo iBox" height="20" class="d-inline-block align-text-top me-2">
+        </a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToko" aria-controls="navbarToko" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToko">
+            <ul class="navbar-nav mb-2 mx-auto mb-lg-0 gap-3 text-secondary fw-semibold">
+                <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#product" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+            <div class="d-flex gap-2">
+                <!-- Tombol Pemicu Offcanvas Keranjang -->
+                <button class="btn btn-light position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#canvasKeranjang" aria-controls="canvasKeranjang">
+                    <i class="bi bi-cart-fill"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        2
+                    </span>
+                </button>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-light">
+                        <i class="bi bi-search"></i>
+                    </button>
+                  </form>
+                <button class="btn btn-dark">
+                    <i class="bi bi-person-fill"></i> Login
+                </button>
+                <button class="btn btn-outline-dark">
+                    Register
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Carousel Hero Section -->
+    <div id="hero">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7VD4XtVh-FtbzhJQ9FmuVQzVE6xdWVtnoVY04iJp7pyn4pUzhXF2CoKG&s=10" class="d-block w-100 vh-30 object-fit-cover" style="height: 750px;" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1><b>RUN WITH LIGHTWEIGHT.</b></h1>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://content.magnumphotos.com/wp-content/uploads/2016/05/NN11464000-1280x960.jpg" class="d-block w-100 vh-30 object-fit-cover" style="height: 750px;" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1><b>EVERY. DAY. SPEED.</b></h1>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/image-5.jpg" class="d-block w-100 vh-30 object-fit-cover" style="height: 750px;" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1><b>NOTHING COMPLICATED ABOUT IT.</b></h1>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <section class="py-5" id="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="badge text-bg-dark mb-3 px-3 py-2">Welcome To Nike Store</span>
+                    <h1 class="fw-bold display-5">Just <span class="text-secondary">Do It.</span></h1>
+                    <p class="text-secondary lead">Bring your game to the next level. Discover the latest drops, iconic sneakers, and premium athletic gear crafted for high performance.</p>
+                    <div class="d-flex gap-2 mt-4">
+                        <a href="#product" class="btn btn-dark btn-lg">Shop Now</a> 
+                        <a href="#product" class="btn btn-outline-dark btn-lg">Explore Collections</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0 text-center">
+                    <img src="images/image-5.jpg" alt="iBox Banner" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- PRODUCT SECTION -->
+<section id="product" class="py-5 bg-light">
+    <div class="container">
+        <!-- Header Judul Section -->
+        <div class="text-center mb-5">
+            <span class="badge text-bg-dark px-3 py-2 mb-2">Our Products</span>
+            <h2 class="fw-bold">Men's Lifestyle Shoes</h2>
+            <p class="text-secondary">Find your best choice</p>
+        </div>
+
+        <!-- Grid Produk -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            
+            <!-- Card Produk 1 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fcfca216-b72b-461b-a5d4-bb34b5fa15e8/AIR+MAX+METRO.png" class="card-img-top" alt="iPhone 15 Pro">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Nike Air Max Metro</h5>
+                        <p class="card-text text-secondary small">City life is calling and this Air Max answers. We crafted it with a durable outsole pattern that's built to take on the streets. Nike Air is sandwiched by Cushlon 3.0 midsole for soft, responsive cushioning.</p>
+                        <div class="d-flex align-items-center gap-2 my-3">
+                            <h5 class="text-dark fw-bold mb-0">Rp 899.000</h5>
+                            <h5 class="text-secondary text-decoration-line-through small mb-0">Rp 1.999.000</h5>
+                            <h5 class="text-success small mb-0">55% Off</h5>
+                        </div>
+                        <div class="mt-auto d-flex gap-2">
+                            <button class="btn btn-outline-dark w-100" data-bs-toggle="modal" data-bs-target="#ModalIphone1">
+                                <i class="bi bi-eye"></i> Detail
+                            </button>
+                            <button class="btn btn-dark w-100" data-bs-toggle="offcanvas" data-bs-target="#canvasKeranjang">
+                                <i class="bi bi-cart-plus"></i> +Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Produk 2 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f1a4c1bd-22e6-4a09-9f21-ed27390b29ec/NIKE+P-6000+ESS.png" class="card-img-top" alt="MacBook Pro">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Nike P-6000</h5>
+                        <p class="card-text text-secondary small">The P-6000 is a mash-up of Pegasus sneakers past. It takes early 2000s running style to modern heights by combining sporty design lines with a variety of textures. And its foam cushioning adds a lifted.</p>
+                        <h5 class="text-dark fw-bold my-3">Rp 1.729.000</h5>
+                        <div class="mt-auto d-flex gap-2">
+                            <button class="btn btn-outline-dark w-100" data-bs-toggle="modal" data-bs-target="#ModalIphone2">
+                                <i class="bi bi-eye"></i> Detail
+                            </button>
+                            <button class="btn btn-dark w-100" data-bs-toggle="offcanvas" data-bs-target="#canvasKeranjang">
+                                <i class="bi bi-cart-plus"></i> +Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Produk 3 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/cc66f8fb-65ed-4baa-a75b-5d4ab7c7fca9/WAFFLE+RACER.png" class="card-img-top" alt="Apple Watch">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Nike Waffle Racer</h5>
+                        <p class="card-text text-secondary small">Eras collide when you lace up in the Nike Waffle Racer. It pairs old-school running details like a moccasin-inspired upper and an iconic Waffle sole with modern details like fresh colours and a comfortable foam midsole.</p>
+                        <h5 class="text-dark fw-bold my-3">Rp 1.399.000</h5>
+                        <div class="mt-auto d-flex gap-2">
+                            <button class="btn btn-outline-dark w-100" data-bs-toggle="modal" data-bs-target="#ModalIphone3">
+                                <i class="bi bi-eye"></i> Detail
+                            </button>
+                            <button class="btn btn-dark w-100" data-bs-toggle="offcanvas" data-bs-target="#canvasKeranjang">
+                                <i class="bi bi-cart-plus"></i> +Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Produk 4 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2b2b2398-9a40-49bd-aac1-20395a8a7a2c/NIKE+ZOOM+SKYLON+11+REFL.png" class="card-img-top" alt="iPhone 15 Pro">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Nike Zoom Skylon 11</h5>
+                        <p class="card-text text-secondary small">The Skylon 11 is back with a bang. This aerodynamic tech runner made its debut in the late 2000s and quickly made an impact—a highly cushioned impact. A chunky midsole pairs Air Zoom with deep grooves for a balanced combo.</p>
+                        <h5 class="text-dark fw-bold my-3">Rp 1.999.000</h5>
+                        <div class="mt-auto d-flex gap-2">
+                            <button class="btn btn-outline-dark w-100" data-bs-toggle="modal" data-bs-target="#ModalIphone4">
+                                <i class="bi bi-eye"></i> Detail
+                            </button>
+                            <button class="btn btn-dark w-100" data-bs-toggle="offcanvas" data-bs-target="#canvasKeranjang">
+                                <i class="bi bi-cart-plus"></i> +Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Produk 5 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/kpqddwb8onq6vurqmmyy/NIKE+ZOOM+VOMERO+5.png" class="card-img-top" alt="MacBook Pro">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Nike Zoom Vomero 5</h5>
+                        <p class="card-text text-secondary small">The Vomero 5 takes early-2000s running to modern heights. A combination of breathable and durable materials stands ready for the rigours of your day, while Zoom Air cushioning delivers a smooth ride.</p>
+                        <h5 class="text-dark fw-bold my-3">Rp 2.489.000</h5>
+                        <div class="mt-auto d-flex gap-2">
+                            <button class="btn btn-outline-dark w-100" data-bs-toggle="modal" data-bs-target="#ModalIphone5">
+                                <i class="bi bi-eye"></i> Detail
+                            </button>
+                            <button class="btn btn-dark w-100" data-bs-toggle="offcanvas" data-bs-target="#canvasKeranjang">
+                                <i class="bi bi-cart-plus"></i> +Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Produk 6 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/28ab3850-f39f-4341-b46b-0e7f786da588/NIKE+V5+RNR.png" class="card-img-top" alt="MacBook Pro">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Nike V5 RNR</h5>
+                        <p class="card-text text-secondary small">Tackle the every day in a shoe that matches comfort with style. Staying true to its Y2K roots, the V5 RNR has a foam midsole that's chunky yet lightweight. Plus, metallic details and a 3D Swoosh logo elevate this retro runner.</p>
+                        <div class="d-flex align-items-center gap-2 my-3">
+                            <h5 class="text-dark fw-bold mb-0">Rp 599.000</h5>
+                            <h5 class="text-secondary text-decoration-line-through small mb-0">Rp 1.329.000</h5>
+                            <h5 class="text-success small mb-0">54% Off</h5>
+                        </div>
+                        <div class="mt-auto d-flex gap-2">
+                            <button class="btn btn-outline-dark w-100" data-bs-toggle="modal" data-bs-target="#ModalIphone6">
+                                <i class="bi bi-eye"></i> Detail
+                            </button>
+                            <button class="btn btn-dark w-100" data-bs-toggle="offcanvas" data-bs-target="#canvasKeranjang">
+                                <i class="bi bi-cart-plus"></i> +Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="badge text-bg-dark px-3 py-2 mb-2">FAQ</span>
+            <h2 class="fw-bold">Frequently Asked Questions</h2>
+            <p class="text-secondary">Find answers to common questions about purchasing Nike products</p>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="accordionFAQ">
+                    <div class="accordion-item border-0 shadow-sm mb-3 rounded overflow-hidden">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Are all products sold here 100% authentic and covered by official warranty?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body text-secondary">
+                                Yes, all Nike products sold on our store are 100% authentic and directly sourced from official distributors, complete with official warranty and quality assurance.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item border-0 shadow-sm mb-3 rounded overflow-hidden">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How long does delivery usually take?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body text-secondary">
+                                For local orders, shipping takes about 1-2 business days. For nationwide and international deliveries, it ranges between 2-5 business days depending on the selected courier service.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item border-0 shadow-sm mb-3 rounded overflow-hidden">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What payment methods are available?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body text-secondary">
+                                We accept various payment methods including Credit/Debit Cards (Visa, Mastercard), Bank Virtual Accounts, E-Wallets, and Cardless Installment options.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item border-0 shadow-sm mb-3 rounded overflow-hidden">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Can I exchange my shoes if the size doesn't fit?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body text-secondary">
+                                Yes, we offer a hassle-free size exchange within 7 days of delivery, provided the item is unworn, in its original condition, and has all original tags and packaging intact.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item border-0 shadow-sm mb-3 rounded overflow-hidden">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                How can I track my order status?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body text-secondary">
+                                Once your order is shipped, you will receive an email and SMS containing a tracking number and a link to monitor your shipment in real time.
+                            </div>
+                        </div>
+                    </div>
+
+    <!-- MODAL DETAIL PRODUK -->
+    <div id="ModalIphone1" tabindex="-1" class="modal fade" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Product Details</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/fcfca216-b72b-461b-a5d4-bb34b5fa15e8/AIR+MAX+METRO.png" class="img-fluid rounded mb-3" alt="iPhone Detail" style="max-height: 200px;">
+                    <h4 class="fw-bold">Nike Air Max Metro</h4>
+                    <p class="text-secondary">City life is calling and this Air Max answers. We crafted it with a durable outsole pattern that's built to take on the streets. Nike Air is sandwiched by Cushlon 3.0 midsole for soft, responsive cushioning.</p>
+                    <span class="fs-4 fw-bold text-dark">Rp 1.999.000</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal" data-bs-toggle="offcanvas" data-bs-target="#canvasKeranjang">
+                        <i class="bi bi-cart-plus"></i> Add To Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ModalIphone2" tabindex="-1" class="modal fade" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Product Details</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f1a4c1bd-22e6-4a09-9f21-ed27390b29ec/NIKE+P-6000+ESS.png" class="img-fluid rounded mb-3" alt="iPhone Detail" style="max-height: 200px;">
+                    <h4 class="fw-bold">Nike P-6000</h4>
+                    <p class="text-secondary">The P-6000 is a mash-up of Pegasus sneakers past. It takes early 2000s running style to modern heights by combining sporty design lines with a variety of textures. And its foam cushioning adds a lifted.</p>
+                    <span class="fs-4 fw-bold text-dark">Rp 1.729.000</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal" data-bs-toggle="offcanvas" data-bs-target="#canvasKeranjang">
+                        <i class="bi bi-cart-plus"></i> Add To Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ModalIphone3" tabindex="-1" class="modal fade" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Product Details</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/cc66f8fb-65ed-4baa-a75b-5d4ab7c7fca9/WAFFLE+RACER.png" class="img-fluid rounded mb-3" alt="iPhone Detail" style="max-height: 200px;">
+                    <h4 class="fw-bold">Nike Waffle Racer</h4>
+                    <p class="text-secondary">Eras collide when you lace up in the Nike Waffle Racer. It pairs old-school running details like a moccasin-inspired upper and an iconic Waffle sole with modern details like fresh colours and a comfortable foam midsole.</p>
+                    <span class="fs-4 fw-bold text-dark">Rp 1.399.000</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal" data-bs-toggle="offcanvas" data-bs-target="#canvasKeranjang">
+                        <i class="bi bi-cart-plus"></i> Add To Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ModalIphone4" tabindex="-1" class="modal fade" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Product Details</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2b2b2398-9a40-49bd-aac1-20395a8a7a2c/NIKE+ZOOM+SKYLON+11+REFL.png" class="img-fluid rounded mb-3" alt="iPhone Detail" style="max-height: 200px;">
+                    <h4 class="fw-bold">Nike Zoom Skylon 11</h4>
+                    <p class="text-secondary">The Skylon 11 is back with a bang. This aerodynamic tech runner made its debut in the late 2000s and quickly made an impact—a highly cushioned impact. A chunky midsole pairs Air Zoom with deep grooves for a balanced combo.</p>
+                    <span class="fs-4 fw-bold text-dark">Rp 1.999.000</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal" data-bs-toggle="offcanvas" data-bs-target="#canvasKeranjang">
+                        <i class="bi bi-cart-plus"></i> Add To Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ModalIphone5" tabindex="-1" class="modal fade" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Product Details</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/kpqddwb8onq6vurqmmyy/NIKE+ZOOM+VOMERO+5.png" class="img-fluid rounded mb-3" alt="iPhone Detail" style="max-height: 200px;">
+                    <h4 class="fw-bold">Nike Zoom Vomero 5</h4>
+                    <p class="text-secondary">The Vomero 5 takes early-2000s running to modern heights. A combination of breathable and durable materials stands ready for the rigours of your day, while Zoom Air cushioning delivers a smooth ride.</p>
+                    <span class="fs-4 fw-bold text-dark">Rp 2.489.000</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal" data-bs-toggle="offcanvas" data-bs-target="#canvasKeranjang">
+                        <i class="bi bi-cart-plus"></i> Add To Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ModalIphone6" tabindex="-1" class="modal fade" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Product Details</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/28ab3850-f39f-4341-b46b-0e7f786da588/NIKE+V5+RNR.png" class="img-fluid rounded mb-3" alt="iPhone Detail" style="max-height: 200px;">
+                    <h4 class="fw-bold">Nike V5 RNR</h4>
+                    <p class="text-secondary">Tackle the every day in a shoe that matches comfort with style. Staying true to its Y2K roots, the V5 RNR has a foam midsole that's chunky yet lightweight. Plus, metallic details and a 3D Swoosh logo elevate this retro runner.</p>
+                    <span class="fs-4 fw-bold text-dark">Rp 1.399.000</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal" data-bs-toggle="offcanvas" data-bs-target="#canvasKeranjang">
+                        <i class="bi bi-cart-plus"></i> Add To Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer class="bg-light text-light pt-5 pb-4 w-100 m-0">
+    <div class="container-fluid px-4 px-md-5">
+      <div class="row gy-4">
+        
+        <!-- Col 1: Links Utama -->
+        <div class="col-6 col-md-3">
+          <h6 class="text-uppercase fw-bold text-dark mb-3" style="font-size: 0.85rem; letter-spacing: 0.5px;">Featured</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Air Force 1</a></li>
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Jordan</a></li>
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Air Max</a></li>
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">VaporMax</a></li>
+          </ul>
+        </div>
+  
+        <!-- Col 2: Get Help -->
+        <div class="col-6 col-md-3">
+          <h6 class="text-uppercase fw-bold text-dark mb-3" style="font-size: 0.85rem; letter-spacing: 0.5px;">Get Help</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Order Status</a></li>
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Shipping & Delivery</a></li>
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Returns</a></li>
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Payment Options</a></li>
+          </ul>
+        </div>
+  
+        <!-- Col 3: About Nike -->
+        <div class="col-6 col-md-3">
+          <h6 class="text-uppercase fw-bold text-dark mb-3" style="font-size: 0.85rem; letter-spacing: 0.5px;">About Nike</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">News</a></li>
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Careers</a></li>
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Investors</a></li>
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Sustainability</a></li>
+          </ul>
+        </div>
+  
+        <!-- Col 4: Logo / Slogan -->
+        <div class="col-6 col-md-3 text-md-end">
+          <div class="mb-2">
+            <img src="images/Nike Logo - Colored - 6144x2048 - zonalogo.com.png" alt="" width="50">
+          </div>
+          <p class="fst-italic text-secondary small">Just Do It.</p>
+        </div>
+  
+      </div>
+  
+      <hr class="border-secondary my-4">
+  
+      <!-- Bottom copyright -->
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center small text-secondary">
+        <p class="mb-2 mb-sm-0">&copy; 2026 Nike, Inc. All Rights Reserved</p>
+        <div>
+          <a href="#" class="text-secondary text-decoration-none me-3">Guides</a>
+          <a href="#" class="text-secondary text-decoration-none me-3">Terms of Sale</a>
+          <a href="#" class="text-secondary text-decoration-none">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+    <div class="bg-dark"></div>
+
+     <!-- SHOPPING CART OFFCANVAS -->
+     <div class="offcanvas offcanvas-end" tabindex="-1" id="canvasKeranjang" aria-labelledby="canvasKeranjangLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold" id="canvasKeranjangLabel">
+                <i class="bi bi-cart3 me-2"></i>Shopping Cart
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <!-- List Produk di Keranjang -->
+            <div class="cart-items flex-grow-1">
+                <!-- Item 1 -->
+                <div class="card mb-3 border-0 shadow-sm">
+                    <div class="card-body p-2">
+                        <div class="row g-2 align-items-center">
+                            <div class="col-3">
+                                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/kpqddwb8onq6vurqmmyy/NIKE+ZOOM+VOMERO+5.png" class="img-fluid rounded" alt="iPhone 15 Pro">
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="mb-0 fw-bold">Nike Zoom Vomero 5</h6>
+                                        <small class="text-secondary d-block">Size - 42 <br>
+                                        Off White</small>
+                                    </div>
+                                    <!-- Tombol Delete Trash -->
+                                    <button class="btn btn-sm text-danger p-0 border-0" title="Hapus Produk">
+                                        <i class="bi bi-trash fs-5"></i>
+                                    </button>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <span class="fw-bold text-dark small">Rp 2.489.000</span>
+                                    <!-- Counter / Quantity Button -->
+                                    <div class="input-group input-group-sm" style="width: 90px;">
+                                        <button class="btn btn-outline-secondary px-2" type="button">-</button>
+                                        <input type="text" class="form-control text-center px-1" value="1" readonly>
+                                        <button class="btn btn-outline-secondary px-2" type="button">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="card mb-3 border-0 shadow-sm">
+                    <div class="card-body p-2">
+                        <div class="row g-2 align-items-center">
+                            <div class="col-3">
+                                <img src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2b2b2398-9a40-49bd-aac1-20395a8a7a2c/NIKE+ZOOM+SKYLON+11+REFL.png" class="img-fluid rounded" alt="Apple Watch">
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="mb-0 fw-bold">Nike Zoom Skylon 11</h6>
+                                        <small class="text-secondary d-block">Size - 43 <br>
+                                        Black Charcoal</small>
+                                    </div>
+                                    
+                                    <button class="btn btn-sm text-danger p-0 border-0" title="Hapus Produk">
+                                        <i class="bi bi-trash fs-5"></i>
+                                    </button>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <span class="fw-bold text-dark small">Rp 1.999.000</span>
+                                    
+                                    <div class="input-group input-group-sm" style="width: 90px;">
+                                        <button class="btn btn-outline-secondary px-2" type="button">-</button>
+                                        <input type="text" class="form-control text-center px-1" value="1" readonly>
+                                        <button class="btn btn-outline-secondary px-2" type="button">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="border-top pt-3 mt-auto">
+                <div class="d-flex justify-content-between mb-2">
+                    <span class="text-secondary">Subtotal</span>
+                    <span class="fw-bold">Rp 4.488.000</span>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <span class="text-secondary">Tax (11%)</span>
+                    <span class="fw-bold">Rp 493.630</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between mb-3">
+                    <span class="fw-bold fs-5">Total</span>
+                    <span class="fw-bold fs-5 text-dark">Rp 4.981.680</span>
+                </div>
+                <button class="btn btn-success w-100 py-2 fw-semibold">
+                    <i class="bi bi-credit-card ms-1"></i>
+                    Checkout 
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
